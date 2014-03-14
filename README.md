@@ -7,7 +7,7 @@ Adds a table pagination below the specified element
 
 Blog: https://my-azur.de/blog/jquery-table-pagination-plugin/
 
-Demo: http://jsfiddle.net/sinky/5SJ9U/
+Demo: https://my-azur.de/blog/cinematic/ (Alternative: http://jsfiddle.net/sinky/5SJ9U/)
 
 ## Usage
 
