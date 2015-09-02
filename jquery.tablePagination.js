@@ -1,6 +1,6 @@
 /*
 	tablePagination Plugin for jQuery (by Marco Krage)
-	Version: 0.2
+	Version: 0.1
 	http://my-azur.de/blog/####
 
 	This plugin is offered under the MIT license.
@@ -21,12 +21,13 @@
     return this.each(function () {
       var $table = $(this);
       var $rows = $table.find('tr:has(td)');
+      var $pageination;
       var pages;
 
       if ($rows.length > settings.perPage) {
         pages = Math.ceil($rows.length / settings.perPage);
 
-        var $pageination = $('<ol/>').addClass(settings.paginationClass);
+        $pageination = $('<ol/>').addClass(settings.paginationClass);
         switch (settings.position) {
           case 'top':
             $pageination.insertBefore($table);
@@ -39,7 +40,6 @@
         var clickPagination = function( i ){
           return function(){
           $pageination.find('li').removeClass('current');
-          //$(this).addClass('current');
           showPage(i);
           }
         }
