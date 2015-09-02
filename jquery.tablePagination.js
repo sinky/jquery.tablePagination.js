@@ -64,7 +64,7 @@
         
         if(pageNum == -1) { // for displaying all rows
           $rows.show();
-          $pageination.filter(':last-child').addClass('current');
+          $pageination.find('li:last-child').addClass('current');
           return;
         }
         if (pageNum < 0) {
