@@ -1,6 +1,6 @@
 /*
 	tablePagination Plugin for jQuery (by Marco Krage)
-	Version: 0.1
+	Version: 0.2
 	http://my-azur.de/blog/####
 
 	This plugin is offered under the MIT license.
@@ -44,7 +44,7 @@
           }
         }
 
-        for (i = 1; i <= pages; i++) {
+        for (var i = 1; i <= pages; i++) {
           $('<li/>').text(i).click(clickPagination(i)).appendTo($pageination);
         }
 
